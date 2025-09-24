@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -74,24 +77,100 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1500x600/1E3A8A/3B82F6') no-repeat center/cover;
+    background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(59, 130, 246, 0.8)), url('https://via.placeholder.com/1500x600/1E3A8A/3B82F6') no-repeat center/cover;
     color: #fff;
     text-align: center;
-    padding: 6rem 1rem;
+    padding: 8rem 1rem;
     border-radius: 0 0 30px 30px;
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 1.2s ease-in;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    max-width: 700px;
+    font-size: 1.5rem;
+    max-width: 800px;
     margin: 0 auto 2rem;
+}
+
+.hero-search {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-search .form-control {
+    border-radius: 8px;
+    border: none;
+    padding: 0.75rem;
+}
+
+.hero-search .btn-primary {
+    padding: 0.75rem 2rem;
+}
+
+/* Featured Jobs */
+.featured-jobs {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.featured-jobs h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1E3A8A;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 4rem 0;
+    background: #f5f7fa;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1E3A8A;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.carousel-item p {
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+
+.carousel-item h5 {
+    color: #10B981;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background: linear-gradient(90deg, #10B981, #059669);
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    border-radius: 12px;
+    margin: 3rem 0;
+}
+
+.cta-banner h2 {
+    margin-bottom: 1.5rem;
+}
+
+.cta-banner .btn {
+    margin: 0 1rem;
 }
 
 /* Form Styling */
@@ -196,6 +275,21 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
+.footer .social-icons {
+    margin-top: 1rem;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #F59E0B;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -229,6 +323,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     .hero h1 {
         font-size: 2rem;
+    }
+    .hero-search {
+        flex-direction: column;
+    }
+    .hero-search .form-control, .hero-search .btn {
+        width: 100%;
     }
     .form-container {
         margin: 2rem 1rem;
