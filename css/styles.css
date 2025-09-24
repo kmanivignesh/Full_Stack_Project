@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +49,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff !important;
     font-weight: 500;
     padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
     transition: all 0.3s ease;
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .nav-link:hover {
@@ -183,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     padding: 2rem 0;
     text-align: center;
-    margin-top: auto; /* Ensures footer stays at bottom */
+    margin-top: auto;
 }
 
 .footer p {
@@ -212,6 +217,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-brand {
         font-size: 1.5rem;
+    }
+    .nav-link i {
+        font-size: 1rem;
     }
 }
 
