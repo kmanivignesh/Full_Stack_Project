@@ -1,0 +1,8 @@
+1. **File Structure**: All files are organized in a clear directory structure with `css/`, `js/`, and `assets/` folders. Replace `assets/logo.png` with an actual logo file.
+2. **Responsive Design**: Bootstrap 5 and custom CSS ensure responsiveness across devices. Media queries in `styles.css` adjust font sizes and margins for smaller screens.
+3. **Advanced CSS**: Includes gradients, shadows, hover effects, and a modern font (Inter). The hero section uses a placeholder background image for visual appeal.
+4. **Navbar**: Consistent across all pages with a logo and "YuktiJobs" branding. Navigation links adapt based on user role (job seeker, recruiter, admin).
+5. **Footer**: Simple and consistent across all pages.
+6. **MERN Integration**: Pages are static HTML for now, with forms and tables ready for dynamic data integration using Node.js, Express, MongoDB, and APIs (e.g., JSearch via RapidAPI).
+7. **Placeholder Content**: Cards and tables contain sample data, ready for API-driven content in the future.
+8. **JavaScript**: Minimal for now (`scripts.js` logs a message), but can be extended for client-side validation or API calls.
